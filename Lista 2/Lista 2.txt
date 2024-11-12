@@ -1,1 +1,210 @@
+ 1)
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int X = 7+3*6/2-1;
+    int Y = 2*abs(2)+2*2/2;
+    int Z = (3*9*(3+(9*3/(3))));
+    cout<< X << endl << Y << endl << Z;
+
+    return 0;
+}
+
+
+
+
+2)
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A;
+    int B;
+    cin >> A;
+    cin >> B;
+    int soma = A+B;
+    int prod = A*B;
+    int dif = A-B;
+    int quo = A/B;
+    cout<<soma<<endl<<prod<<endl<<dif<<endl<<quo;
+
+    return 0;
+}
+
+
+
+
+3)
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int r;
+    double pi = 3.14159;
+    cin >> r;
+    cout << 2*r << endl << 2*pi*r<<endl<<pi*r*r;
+    return 0;
+}
+
+
+
+
+
+
+4)
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"*********        ***         *             *"<<endl;
+    cout<<"*          *      *     *      ***         *    *"<<endl;
+    cout<<"*          *     *       *    *****      *      *"<<endl;
+    cout<<"*          *     *       *      *        *        *"<<endl;
+    cout<<"*          *     *       *      *       *          *"<<endl;
+    cout<<"*          *     *       *      *        *        *"<<endl;
+    cout<<"*          *     *       *      *         *      *"<<endl;
+    cout<<"*          *      *     *       *          *   *"<<endl;
+    cout<<"*********        ***         *            *"<<endl;
+
+    return 0;
+}
+
+
+
+
+5)
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float a;
+    float b;
+    cin >> a;
+    cin >> b;
+    cout << a*b << " m^2" << endl;
+    return 0;
+}
+
+
+
+
+6)
+#include <iostream>
+using namespace std;
+
+int main(){
+	int A;
+	int B;
+	cin >> A;
+	cin >> B;
+
+	if (A%B ==0) {
+		cout<< A <<" É multiplo de "<< B<< endl;
+	}
+	else {
+		cout<< A <<" Não multiplo de "<< B<< endl;
+	}
+	return 0;
+}
+
+
+
+
+7)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int divisor = 0;
+
+    cout << "Digite um numero inteiro: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i = i + 1) {
+        if (n % i == 0) {
+            divisor = divisor + 1;
+        }
+    }
+
+    if (n > 1 && divisor == 2) {
+        cout << n << " é um numero primo." << endl;
+    } 
+    else {
+        cout << n << " não é um numero primo." << endl;
+    }
+
+    return 0;
+}
+
+
+
+
+8)
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+    float c1;
+    float c2;
+    float h;
+
+    cin >> c1;
+    cin >> c2;
+    h = sqrt(c1*c1+c2*c2);
+
+    cout<<h;
+
+    return 0;
+}
+
+
+
+
+9)
+#include <iostream>
+#include <cmath>
+using namespace std;
  
+int main()
+{
+    float km;
+    float preco;
+    float quo;
+    
+    cin>>km;
+    float a = km;
+    
+    preco = 0;
+    quo = (km/50);
+    if(quo < 1)
+    {
+        preco = 1.75*km;
+    }
+    else if((quo >=1) && (quo < 3 ) )
+    {
+        preco = 1.75*50;
+        km = km - 50;
+        preco = preco + (1.65*km);
+    }
+    else if((quo >=3))
+    {
+        preco = 1.75*(50);
+        km = km - 50;
+        preco = preco + (1.65*100);
+        km = km - 100;
+        preco = preco + (1.50*km);
+    }
+    printf("Valor total a pagar %.2f\n", preco);
+    printf("Media por quilometro = R$%.2f\n", preco/a);
+
+    return 0;
+}
+
